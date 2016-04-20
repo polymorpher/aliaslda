@@ -4,9 +4,16 @@ A demonstration of AliasLDA, AliasPDP, and AliasHDP, as described in the KDD 201
 
 Slides (with presentation captions), presented at KDD 2014 conference, is available [here](https://storage.googleapis.com/aliaslda/kdd2014talk.pdf). The slide themselves are kindly created by Alex Smola two days before the presentation, to help me focus on the presentation process itself.
 
+The source code is identical to what was used in the original experiments, except for 
 
+1. a CMake + CLion project wrapper
+2. a small patch on SparseLDA, to fix a bug.
 
-The source code is identical to what was used in the original experiments, except for a CMake + CLion project wrapper, and a small bug fix on SparseLDA. The bug has resulted topics with documented-count 1 being sampled slightly incorrectly, a consequence of code over-optimisation. In the paper, the effect is visible in the experiment results: SparseLDA has slightly higher perplexity after convergence than AliasLDA. It can be verified that the sampling speed of SparseLDA are the same before and after fixing this bug, therefore all results in the paper still hold. 
+With the bug, topics with documented-count 1 are sampled slightly incorrectly. 
+
+In the paper, the effect is visible in the experiment results: SparseLDA has slightly higher perplexity after convergence than AliasLDA. 
+
+However, it can be verified that the sampling speed of SparseLDA are the same before and after this patch, therefore all results in the paper still hold. 
 
 Q&A
 =========
