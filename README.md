@@ -1,4 +1,4 @@
-Created and maintained by: [Aaron Li](https://www.linkedin.com/in/aaronqli)
+### Created and maintained by: [Aaron Li](https://www.linkedin.com/in/aaronqli)
 
 A demonstration of AliasLDA, AliasPDP, and AliasHDP, as described in the KDD 2014 paper [Reducing the Sampling Complexity of Topic Models](https://storage.googleapis.com/aliaslda/kdd2014afterPeerReview.pdf) (Aaron Li, Amr Ahmed, Sujith Ravi, Alexander Smola). 
 
@@ -9,7 +9,7 @@ Slides (with presentation captions), presented at KDD 2014 conference, is availa
 The source code is identical to what was used in the original experiments, except for a CMake + CLion project wrapper, and a small bug fix on SparseLDA. The bug has resulted topics with documented-count 1 being sampled slightly incorrectly, a consequence of code over-optimisation. In the paper, the effect is visible in the experiment results: SparseLDA has slightly higher perplexity after convergence than AliasLDA. It can be verified that the sampling speed of SparseLDA are the same before and after fixing this bug, therefore all results in the paper still hold. 
 
 Q&A
---------
+=========
 Q: The code looks really messy and hacky! Can you clean up the code?
 
 A: That's because I wrote it very quickly (2-3 weeks in total) for doing experiments, and never worked on it again since Feb 2012. I will try to clean it up when I have time.
@@ -39,7 +39,7 @@ Q: How about you writing a version using one of the open source large-scale mach
 A: Great idea! I will do that when I have time.
 
 Instructions
------------
+=========
 I recommend using an IDE to compile this, such as [CLion](https://www.jetbrains.com/clion/). You can use the run-configuration I provided in the project, to start quickly.
 
 The default CMakeLists.txt only compiles AliasLDA and SparseLDA related stuff. You can uncomment some lines to compile other implementations, such as HDPLDA, PDPLDA, AliasPDP, AliasHDP, and some hacky tests, etc.
@@ -57,7 +57,7 @@ This launches an experiment using the config file `~/aliasdata/conf/test.ext1.co
 `~/aliasdata/conf/test.ext1.conf` is the config file describing the data locations. See next section for detail.
 
 Data
---------
+========
 I shared the data from [my Dropbox folder](https://www.dropbox.com/sh/zryf092lcatwtc0/AABybC3JS7pAg27LOcd6TawKa?dl=0). In `test` folder, you can find the config file mentioned in last section. In `data` folder, you can find actual data.
 
 To use them directly without any modification, just copy them to the root folder of this project.
