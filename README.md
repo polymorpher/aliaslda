@@ -1,4 +1,5 @@
-### Created and maintained by: [Aaron Li](https://www.linkedin.com/in/aaronqli)
+Created and maintained by: [Aaron Li](https://www.linkedin.com/in/aaronqli)
+-----------
 
 A demonstration of AliasLDA, AliasPDP, and AliasHDP, as described in the KDD 2014 paper [Reducing the Sampling Complexity of Topic Models](https://storage.googleapis.com/aliaslda/kdd2014afterPeerReview.pdf) (Aaron Li, Amr Ahmed, Sujith Ravi, Alexander Smola). 
 
